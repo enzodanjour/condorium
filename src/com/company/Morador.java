@@ -1,8 +1,8 @@
 package com.company;
 
 public class Morador extends IMoradores {
-    private String nome ;
-    private String senha ;
+    private String nome;
+    private String senha;
 
     @Override
     public void logar(String name,String senha) {
@@ -13,11 +13,10 @@ public class Morador extends IMoradores {
 
     @Override
     public boolean isLogado() {
-        System.out.println(getNome());
-        System.out.println(getSenha());
-        if(getNome() == "Anderson" && getSenha() == "123456" || getNome() == "enzo" && getSenha() == "123456"){
+        if((nome.equals("anderson") && senha.equals("123456")) || (nome.equals("enzo") && senha.equals("123456"))){
             return true;
         }else{
+            System.out.println("Morador ou senha não correspondentes, reinsira seus dados");
             return false;
         }
     }

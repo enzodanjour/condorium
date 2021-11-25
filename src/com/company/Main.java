@@ -9,12 +9,13 @@ public class Main {
 	    int index = 0;
         Morador morador = new Morador();
         boolean autorizado = false;
+        System.out.println("Bem vindo faça o login no condorium");
         do{
-            System.out.println("Bem vindo faça o login no condorium");
+
             System.out.println("Digite o seu nome");
-            String nome = scanner.nextLine();
+            String nome = scanner.next();
             System.out.println("Digite a sua senha");
-            String senha = scanner.nextLine();
+            String senha = scanner.next();
             morador.logar(nome,senha);
             System.out.println(morador.isLogado());
             autorizado = morador.isLogado();
