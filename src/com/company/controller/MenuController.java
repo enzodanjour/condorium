@@ -12,7 +12,6 @@ public class MenuController implements IMenuController{
 
     Morador morador = new Morador("enzo","enzo.danjour@gmail.com","27/05/1999","123456",89);
 
-
     ArrayList<Pessoa> pessoas = new ArrayList<Pessoa>();
 
     @Override
